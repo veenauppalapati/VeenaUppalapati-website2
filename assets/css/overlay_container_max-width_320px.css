@@ -1,0 +1,138 @@
+
+
+@media only screen and (max-width: 320px) {
+    .content-wrapper {
+        width:80%;
+    }
+    .fb h1 {
+       
+        font-size:3em;
+    }
+    .fv h6{
+  
+        width:100%;
+        top:62%;
+        font-size: 0.4em;
+      }
+      #caretDown_icon{
+          position: absolute;
+          margin:0;
+        
+        transform: scale(-0.8);
+        transform-origin: left;
+        transform: translate(-50%,0);
+      }
+  
+  }
+  @media only screen and (min-height: 700px){
+    .fv h1{
+        font-size:4em;
+    }
+      .fv h6{
+          
+          top:68%;
+          font-size:1.2em;
+      }
+    
+  }
+  @media only screen and (max-height: 700px){
+    .fv h1{
+        font-size:4em;
+    }
+      .fv h6{
+         
+          top:68%;
+          font-size:1em;
+      }
+     
+  }
+  @media only screen and (max-height: 550px){
+      .fv h1{
+         
+          font-size:3em;
+      }
+    .fv h6{
+      
+        top:75%;
+        font-size: 0.8em;
+    }
+    #caretDown_icon{
+       
+        margin-bottom:1%;
+     }
+
+}
+
+@media only screen and (max-width: 770px) {
+    .content-wrapper {
+     background-color: transparent;
+   
+   }
+ 
+    }
+
+@media only screen and (max-height: 440px){
+    .fv h1{
+      
+        font-size:2.2em;    
+    }
+    .fv h6{
+        top:72%;
+    }
+    #caretDown_icon{
+        transform: scale(0.4);
+        transform-origin: left;
+        
+    }
+  
+}
+@media only screen and (max-height: 300px){
+    .fv h1{
+  
+        font-size:2.0em;
+    }
+    .fv h6{
+        
+        font-size:0.5em;
+        top:80%;
+    }
+    #caretDown_icon{
+       
+        transform: scale(0.2);
+       bottom:-20px;
+    }
+  
+}
+
+@media only screen and (max-height: 220px){
+    .fv h1{
+        
+        font-size:1.5em;
+    }
+    .fv h6{
+        
+        font-size:0.8em;
+        top:65%;
+    }
+ 
+  
+}
+@media only screen and (max-height: 175px){
+    .fv h1{
+       
+        font-size:1.0em;
+    }
+    .fv h6{
+       
+        font-size:0.4em;
+        top:60%;
+    }
+    #caretDown_icon{
+     
+        transform: scale(0.2);
+       
+    }
+  
+}
+
+

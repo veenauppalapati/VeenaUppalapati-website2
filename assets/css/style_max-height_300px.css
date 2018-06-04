@@ -1,0 +1,22 @@
+   
+   @media screen and (max-height:300px) {
+    .fullscreen_network_links_container ul li a{
+      border: none;
+    }
+   
+    .fullscreen_network_links_container{
+      position: absolute;
+      top:50%;
+      left:15%;
+      margin:0; 
+      transform: translate(-50%, 0);
+      box-sizing: border-box;
+     
+    }
+  
+    .menu-container ul li{
+      display: inline;
+      font-size: 2px !important;
+    }
+  }
+  

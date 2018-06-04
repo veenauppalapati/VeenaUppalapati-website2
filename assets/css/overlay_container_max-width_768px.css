@@ -1,0 +1,26 @@
+/* Overlay attribute specifications */
+@media only screen and (max-width: 768px) {
+
+  /* black div that contains all the text and content  */
+  .content-wrapper{
+    width:60%;
+    
+    top:50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fv h1{
+    font-size:2.5em;
+  }
+
+  .fv h6{
+
+    width:80%;
+   top:52%;
+    font-size: 0.8em;
+    
+  }
+
+
+ 
+}
