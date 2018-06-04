@@ -2,8 +2,9 @@ $(document).ready(function(){
     $(".fullscreen_nav_menu").hide();
     $('#close_icon').hide();
     $('.portfolio').hide();
-    $('.work_window').hide();
-    
+    // $('.work_window').hide();
+    $('.whiteOverlay').hide();
+$('.headerbg_home').show();
     
     // when the hamburger button is triggered
     $("#hamburger_icon_fullscreen").click(function(){       
@@ -13,23 +14,22 @@ $(document).ready(function(){
         $('#close_icon').show();
         $('#hamburger_icon_fullscreen').hide();
         $('.work_window').hide();   
-     $('.contact_menu_title h3').css('color', 'white');
-$('.portfolio_header').css('background-color', '#0F394C');
+        $('.contact_menu_title h3').css('color', 'white');
+        $('.portfolio_header').css('background-color', '#0F394C');
     });
 
     // When the close icon is triggered
     $("#close_icon").click(function(){
         $(".fullscreen_nav_menu").hide();
-        $('.overlay').show();
-        $('.portfolio').hide();
+        $('.overlay').hide();
+        $('.portfolio').show();
         $('#hamburger_icon_fullscreen').toggle();
         $('#close_icon').hide();
-        $('.work_window').hide();
+        $('.work_window').show();
         $('#contactHeader').css('background-color', 'blue');
         $('#indexHeader').css('background-color', 'transparent');
-        $('.headerbg').removeClass('headerColor');
-        
-
+        $('.headerbg').removeClass('headerColor');  
+        $('.headerbg_home').hide();  
     });
 
     // When the carat icon is triggered
@@ -42,8 +42,11 @@ $('.portfolio_header').css('background-color', '#0F394C');
         $('.overlay').hide();
         $('.portfolio').toggle();
         $('.work_window').show();
-        // $('.fullscree_nav_menu').css('background-color', 'green');   
-        
+        // $('.fullscree_nav_menu').css('background-color', 'green'); 
+        $('.whiteOverlay').show(); 
+        $('body').css('background-image', "url('../assets/images/Veena-coverphoto.JPG')" );
+        $('.headerbg_home').hide();
+        $('.close_icon_wrapper').css('visibility', 'hidden');
     });
 
     // mediaQueryjs
