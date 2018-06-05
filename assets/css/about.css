@@ -23,7 +23,8 @@ body{
   .pinkDiv {
     height: auto;
     background-color: rgba(224, 85, 21, 0.685); 
-     
+     width:100vw;
+     height:100vh;
   }
 
   .title_wrapper h1{
