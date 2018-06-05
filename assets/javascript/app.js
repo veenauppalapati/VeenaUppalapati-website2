@@ -1,35 +1,39 @@
 $(document).ready(function(){
     $(".fullscreen_nav_menu").hide();
-    $('#close_icon').hide();
+    $('.close_icon').hide();
     $('.portfolio').hide();
     // $('.work_window').hide();
     $('.whiteOverlay').hide();
 $('.headerbg_home').show();
     
     // when the hamburger button is triggered
-    $("#hamburger_icon_fullscreen").click(function(){       
+    $(".hamburger_icon_fullscreen").click(function(){       
         $(".fullscreen_nav_menu").show();
         $('.overlay').hide();
         $('.portfolio').hide();
-        $('#close_icon').show();
-        $('#hamburger_icon_fullscreen').hide();
+        $('.close_icon').show();
+        $('.hamburger_icon_fullscreen').hide();
         $('.work_window').hide();   
         $('.contact_menu_title h3').css('color', 'white');
-        $('.portfolio_header').css('background-color', '#0F394C');
+        $('.hamburger_icon_wrapper').hide();
+        $('.portfolio_header').css('background-color', '#11394B');
+        console.log('hello');
     });
 
     // When the close icon is triggered
-    $("#close_icon").click(function(){
+    $(".close_icon").click(function(){
         $(".fullscreen_nav_menu").hide();
         $('.overlay').hide();
         $('.portfolio').show();
-        $('#hamburger_icon_fullscreen').toggle();
-        $('#close_icon').hide();
+        $('.hamburger_icon_fullscreen').show();
+        $('.close_icon').hide();
         $('.work_window').show();
         $('#contactHeader').css('background-color', 'blue');
-        $('#indexHeader').css('background-color', 'transparent');
+        // $('#indexHeader').css('background-color', 'red');
         $('.headerbg').removeClass('headerColor');  
         $('.headerbg_home').hide();  
+        $('.hamburger_icon_wrapper').show();
+        $('.portfolio_header').css('background-color', '#F88043');
     });
 
     // When the carat icon is triggered
@@ -37,17 +41,14 @@ $('.headerbg_home').show();
         $('.headerbg').addClass('headerColor');
         $('h3, #hamburger_icon_fullscreen').css('color', 'white');
         $('.hamburger_icon_wrapper').css('border-left', '1px solid white');
-        // $('.portfolio_header').css('background-color', 'black');
         $('.portfolio_header').css('background-color', 'transparent');
         $('.overlay').hide();
         $('.portfolio').toggle();
         $('.work_window').show();
-        // $('.fullscree_nav_menu').css('background-color', 'green'); 
         $('.whiteOverlay').show(); 
         $('body').css('background-image', "url('../assets/images/Veena-coverphoto.JPG'" );
         $('body').css('background-size', 'contain' );
-        $('.headerbg_home').hide();
-        $('.close_icon_wrapper').css('visibility', 'hidden');
+      
     });
 
     // mediaQueryjs
