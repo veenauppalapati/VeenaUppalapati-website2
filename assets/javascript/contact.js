@@ -1,6 +1,11 @@
 $(document).ready(function(){
     
-    
+    $('.close_icon').hide();
+    $(".close_icon").click(function(){
+        $('body').css('background-color', 'white');
+        $('body').css('background-image', "none" );
+        $('.portfolio_header').css('background-color', 'blue');
+    });
     $('#submit').click(function(){
         var fullName = $('#fullname').val()
         

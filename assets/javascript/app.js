@@ -4,7 +4,7 @@ $(document).ready(function(){
     $('.portfolio').hide();
     // $('.work_window').hide();
     $('.whiteOverlay').hide();
-$('.headerbg_home').show();
+    $('.headerbg_home').show();
     
     // when the hamburger button is triggered
     $(".hamburger_icon_fullscreen").click(function(){       
@@ -17,7 +17,7 @@ $('.headerbg_home').show();
         $('.contact_menu_title h3').css('color', 'white');
         $('.hamburger_icon_wrapper').hide();
         $('.portfolio_header').css('background-color', '#11394B');
-        console.log('hello');
+        $('#contactForm').hide();
     });
 
     // When the close icon is triggered
@@ -36,6 +36,8 @@ $('.headerbg_home').show();
         $('.hamburger_icon_wrapper').show();
         $('.portfolio_header').css('background-color', 'transparent');
         $('body').css('background-image', "url('../assets/images/giphy.gif'" );
+        $('body').css('background-repeat', 'repeat' );
+        $('#contactForm').show();
     });
 
     // When the carat icon is triggered
@@ -48,9 +50,9 @@ $('.headerbg_home').show();
         $('.portfolio').toggle();
         $('.work_window').show();
         $('.whiteOverlay').show(); 
-        $('body').css('background-image', "url('../assets/images/Veena-coverphoto.JPG'" );
+        $('body').css({'background-image': "url('../assets/images/Veena-coverphoto.JPG'", 'background-repeat': 'no-repeat'});
         $('body').css('background-size', 'contain' );
-      
+        // $('body').css('background-repeat', 'no-repeat' );
     });
 
     // mediaQueryjs
