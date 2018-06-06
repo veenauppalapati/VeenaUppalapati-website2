@@ -51,7 +51,7 @@ $(document).ready(function(){
         $('.work_window').show();
         $('.whiteOverlay').show(); 
         $('body').css({'background-image': "url('../assets/images/Veena-coverphoto.JPG'", 'background-repeat': 'no-repeat'});
-        $('body').css('background-size', 'contain' );
+        $('body').css('background-size', 'scale-down' );
         // $('body').css('background-repeat', 'no-repeat' );
     });
 
