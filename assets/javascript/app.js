@@ -23,17 +23,19 @@ $('.headerbg_home').show();
     // When the close icon is triggered
     $(".close_icon").click(function(){
         $(".fullscreen_nav_menu").hide();
-        $('.overlay').hide();
-        $('.portfolio').show();
+        $('.overlay').show();
+        $('.portfolio').hide();
         $('.hamburger_icon_fullscreen').show();
         $('.close_icon').hide();
         $('.work_window').show();
+        $('.whiteOverlay').hide();
         $('#contactHeader').css('background-color', 'blue');
-        // $('#indexHeader').css('background-color', 'red');
+        $('#indexHeader').css('background-color', 'red');
         $('.headerbg').removeClass('headerColor');  
         $('.headerbg_home').hide();  
         $('.hamburger_icon_wrapper').show();
-        $('.portfolio_header').css('background-color', '#F88043');
+        $('.portfolio_header').css('background-color', 'transparent');
+        $('body').css('background-image', "url('../assets/images/giphy.gif'" );
     });
 
     // When the carat icon is triggered
