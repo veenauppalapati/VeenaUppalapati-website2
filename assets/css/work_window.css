@@ -1,5 +1,5 @@
 .work_window{
-    background-color: #11394B;
+    background-color:rgb(241, 125, 16);
     width:100vw;
     height:100vh;
     padding-top:12%;
@@ -14,11 +14,11 @@
 .applications {
     padding:20px 40px 20px 40px;
     border: #e9e9e9 solid 0.5px;
-    background-color: rgb(241, 125, 16);
+    background-color:#11394B;
 }
 .applications p{
     text-align: center;
-   color:#11394B;
+   color:white;
 }
 
 @media only screen and (max-width: 600px) {
