@@ -2,9 +2,9 @@ $(document).ready(function(){
     
     $('.close_icon').hide();
     $(".close_icon").click(function(){
-        $('body').css('background-color', 'white');
+        $('body').css('background-color', 'rgb(241, 125, 16)');
         $('body').css('background-image', "none" );
-        $('.portfolio_header').css('background-color', 'blue');
+        $('.portfolio_header').css('background-color', 'rgb(241, 125, 16)');
     });
     $('#submit').click(function(){
         var fullName = $('#fullname').val()
