@@ -50,7 +50,7 @@ $(document).ready(function(){
         $('.portfolio').toggle();
         $('.work_window').show();
         $('.whiteOverlay').show(); 
-        $('body').css({'background-image': "url('../assets/images/Veenacover.jpg'", 'background-repeat': 'no-repeat'});
+        $('body').css({'background-image': "url('./assets/images/Veenacover.jpg'", 'background-repeat': 'no-repeat'});
         $('body').css('background-size', 'scale-down' );
         // $('body').css('background-repeat', 'no-repeat' );
     });
