@@ -2,14 +2,14 @@ $(document).ready(function(){
     $(".fullscreen_nav_menu").hide();
     $('.close_icon').hide();
     $('.portfolio').hide();
-    // $('.work_window').hide();
-    $('.whiteOverlay').hide();
-    $('.headerbg_home').show();
+    // $('.headerbg_home').show();
+
+    $('.overlay').show();
     
     // when the hamburger button is triggered
     $(".hamburger_icon_fullscreen").click(function(){       
         $(".fullscreen_nav_menu").show();
-        $('.overlay').hide();
+        $('.bg').hide();
         $('.portfolio').hide();
         $('.close_icon').show();
         $('.hamburger_icon_fullscreen').hide();
@@ -28,13 +28,13 @@ $(document).ready(function(){
         $('.hamburger_icon_fullscreen').show();
         $('.close_icon').hide();
         $('.work_window').show();
-        $('.whiteOverlay').hide();
+        $('.bg').hide();
         $('#contactHeader').css('background-color', 'blue');
         $('#indexHeader').css('background-color', 'red');
         $('.headerbg').removeClass('headerColor');  
         $('.headerbg_home').hide();  
         $('.hamburger_icon_wrapper').show();
-        $('.portfolio_header').css('background-color', 'transparent');
+        $('.portfolio_header').css('background-color', 'red');
         $('body').css('background-image', "url('../assets/images/giphy.gif'" );
         $('body').css('background-repeat', 'repeat' );
         $('#contactForm').show();
@@ -42,17 +42,17 @@ $(document).ready(function(){
 
     // When the carat icon is triggered
     $('#caretDown_icon').click(function(){
-        $('.headerbg').addClass('headerColor');
+        $('.headerbg').show();
+        // $('.headerbg').addClass('headerColor');
         $('h3, #hamburger_icon_fullscreen').css('color', 'white');
         $('.hamburger_icon_wrapper').css('border-left', '1px solid white');
-        $('.portfolio_header').css('background-color', 'transparent');
+        $('.portfolio_header').css('background-color', 'blue');
         $('.overlay').hide();
         $('.portfolio').toggle();
         $('.work_window').show();
-        $('.whiteOverlay').show(); 
-        $('body').css({'background-image': "url('./Veenacover.jpg'", 'background-repeat': 'no-repeat'});
-        $('body').css('background-size', 'scale-down' );
-        // $('body').css('background-repeat', 'no-repeat' );
+        $('.bg').show(); 
+        $('body').css('background-image', "none" );
+        $('.bg').css('background-image', "url('./Veenacover.jpg'" );
     });
 
     // mediaQueryjs
